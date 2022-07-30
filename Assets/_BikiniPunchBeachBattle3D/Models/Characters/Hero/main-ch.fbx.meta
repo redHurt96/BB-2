@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: ef2298123e319b84c9f1c428aeafcbcd
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: -6886437664446709880
+    second: Armature.002|Armature.002|Armature|Catwalk
+  - first:
+      74: -1512162420169536398
+    second: Armature.002|Armature.002|Armature|Catwalk.001
+  - first:
+      74: 5050018209296891187
+    second: Armature.002|Armature.002|Armature|Catwalk.002
+  - first:
+      74: 7646959052996622689
+    second: Armature.002|Armature.002|Armature|Enjoy
+  - first:
+      74: 8441572030668376001
+    second: Armature.002|Armature.002|Armature|Enjoy.001
+  - first:
+      74: 7447779482731249513
+    second: Armature.002|Armature.002|Armature|Fall 2
+  - first:
+      74: -8288842403554170483
+    second: Armature.002|Armature.002|Armature|Fall 2.001
+  - first:
+      74: -8027350342535423534
+    second: Armature.002|Armature.002|Armature|Fall forward
+  - first:
+      74: -2110374323979185386
+    second: Armature.002|Armature.002|Armature|Fall forward.001
+  - first:
+      74: 1795112903521274963
+    second: Armature.002|Armature.002|Armature|Idle 2
+  - first:
+      74: -829905731971986189
+    second: Armature.002|Armature.002|Armature|Idle 2.001
+  - first:
+      74: 6598134544575976486
+    second: Armature.002|Armature.002|Armature|Sad 2
+  - first:
+      74: -7634945339359069752
+    second: Armature.002|Armature.002|Armature|Sad 2.001
+  - first:
+      74: -5695881802990187082
+    second: Armature.002|Armature.002|Armature|Walk
+  - first:
+      74: -1548169244486615489
+    second: Armature.002|Armature.002|Armature|Walk.001
+  - first:
+      74: -812468144613530334
+    second: Armature.002|Armature|Armature|Catwalk
+  - first:
+      74: -3349368299579745714
+    second: Armature.002|Armature|Armature|Catwalk.002
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bikini
+    second: {fileID: 2100000, guid: dba934f7f331e3149aebdd5693b9e2d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boxer
+    second: {fileID: 2100000, guid: 46148c0e0ff0ac840b556e327c7e2439, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boxer.001
+    second: {fileID: 2100000, guid: dca24423755224c4697845ac06d3cda5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye-brows
+    second: {fileID: 2100000, guid: 2529ebca260367d46af28831ca7bcd37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye-lashes
+    second: {fileID: 2100000, guid: 5dbb123cc224dee4fbaa286ced3bfd23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes-whites
+    second: {fileID: 2100000, guid: 36b07f090ce20474fadc0f1d22522bc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes.001
+    second: {fileID: 2100000, guid: 40bc6e7689de8cd499c3bffbfef0731a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair.001
+    second: {fileID: 2100000, guid: 2dc3b89127298714da0946f24a06fc58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lips.001
+    second: {fileID: 2100000, guid: 868de7259378fe64fa67f3a5f9a9907e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 260b7e6c9c59a28458bcf9b456359908, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
