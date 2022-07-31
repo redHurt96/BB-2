@@ -12,7 +12,11 @@ namespace _BikiniPunchBeachBattle3D.GameServices
     public class DataService : IService
     {
         public SavableData SavableData = new SavableData();
-        public GameObject CurrentOpponentGO { get; set; }
+        public GameObject CurrentOpponentGO 
+        { 
+            get;
+            set;
+        }
         public float RageValue { get; set; }
         public int LeaderboardPlace { get; set; }
 

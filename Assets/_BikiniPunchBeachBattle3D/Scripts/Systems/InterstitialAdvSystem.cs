@@ -13,10 +13,10 @@ namespace _BikiniPunchBeachBattle3D.Systems
         
         private Coroutine _waitRoutine;
 
-        // private MaxAdsManager _maxAdsManager;
-        //
-        // public InterstitialAdvSystem() => 
-        //     _maxAdsManager = Services.Get<MaxAdsManager>();
+        private MaxAdsManager _maxAdsManager;
+        
+        public InterstitialAdvSystem() => 
+            _maxAdsManager = Services.Get<MaxAdsManager>();
 
         public override void Init()
         {
@@ -49,7 +49,7 @@ namespace _BikiniPunchBeachBattle3D.Systems
             while (!_data.IsOpponentPunchingBag)
                 yield return _waitForFightEndingDelay;
             
-            //_maxAdsManager.ShowInter("Main scene");
+            _maxAdsManager.ShowInter("Main scene");
         }
     }
 }

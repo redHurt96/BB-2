@@ -46,20 +46,13 @@ namespace _BikiniPunchBeachBattle3D.UI.Windows
         private void OnDestroy() => 
             _buyButton.onClick.RemoveListener(Buy);
 
-        // private void Buy() =>
-        //     Services.Get<MaxAdsManager>().ShowRewardVideo("boss_fight_win", () =>
-        //     {
-        //         _data.SetGlovesColor(_color);
-        //         _data.AddStats(_stats);
-        //         _actions.GoToMainHud(withOffer: false);
-        //     });
-
-        private void Buy()
-        {
-            _data.SetGlovesColor(_color);
-            _data.AddStats(_stats);
-            _actions.GoToMainHud(withOffer: false);
-        }
+        private void Buy() =>
+            Services.Get<MaxAdsManager>().ShowRewardVideo("boss_fight_win", () =>
+            {
+                _data.SetGlovesColor(_color);
+                _data.AddStats(_stats);
+                _actions.GoToMainHud(withOffer: false);
+            });
 
         private void ShowGlovesOnScreen() => 
             _sceneRefs.GlovesForOffer.

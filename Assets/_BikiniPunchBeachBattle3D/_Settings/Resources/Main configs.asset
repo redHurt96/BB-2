@@ -21,29 +21,22 @@ MonoBehaviour:
   StaminaPerHit: 2
   RestoreStaminaDelay: 2
   RestoreStaminaSpeed: 5
-  PunchingBagPrefab: {fileID: 5203933258741975920, guid: b85b0563dfb12ef4fa08ad097f13b1b7,
-    type: 3}
+  PunchingBagPrefab: {fileID: 5203933258741975920, guid: b85b0563dfb12ef4fa08ad097f13b1b7, type: 3}
   PunchingBagHitCount: 20
   GraphicsByHealth:
   - HealthPercent: 0.25
-    Graphics: {fileID: 7940675382620010795, guid: 3a12ad70ec7121c4ab5fbd5bf8d72645,
-      type: 3}
+    Graphics: {fileID: 7940675382620010795, guid: 3a12ad70ec7121c4ab5fbd5bf8d72645, type: 3}
   - HealthPercent: 0.5
-    Graphics: {fileID: 6937771317434207121, guid: 42cef1fa64f1b5144a03306f7a7de714,
-      type: 3}
+    Graphics: {fileID: 6937771317434207121, guid: 42cef1fa64f1b5144a03306f7a7de714, type: 3}
   - HealthPercent: 0.75
-    Graphics: {fileID: 5953463975924244202, guid: c17c51958819524438dc14168216b12e,
-      type: 3}
+    Graphics: {fileID: 5953463975924244202, guid: c17c51958819524438dc14168216b12e, type: 3}
   - HealthPercent: 1
-    Graphics: {fileID: 7042875885965326516, guid: 0bfa2c76415a1c148880704aa62347cf,
-      type: 3}
-  FighterOpponentPrefab: {fileID: 7771733274081552638, guid: b826355a7b64ee140aa2dbd4578d72ea,
-    type: 3}
+    Graphics: {fileID: 7042875885965326516, guid: 0bfa2c76415a1c148880704aa62347cf, type: 3}
+  FighterOpponentPrefab: {fileID: 7771733274081552638, guid: b826355a7b64ee140aa2dbd4578d72ea, type: 3}
   OpponentSkins:
   - {fileID: 987089744788299999, guid: cca32683453fd4b4c9d5d3d066df6b8c, type: 3}
   - {fileID: 2331982280544086362, guid: b6aad15d71e27ec43af45eb07e0fa51c, type: 3}
-  BossSkin: {fileID: 1451115577101147535, guid: b35c17f33806f5a47bfee988549f35d0,
-    type: 3}
+  BossSkin: {fileID: 1451115577101147535, guid: b35c17f33806f5a47bfee988549f35d0, type: 3}
   AiPunchDelayMin: 1
   AiPunchDelayMax: 2
   MoneyPerOpponent: 100
@@ -53,8 +46,7 @@ MonoBehaviour:
   DecreaseRageSpeed: 0.3
   RageIncomeCoefficient: 1.2
   RageTreshholdValue: 0.9
-  IncomeFxPrefab: {fileID: 5205163342400219264, guid: ca70db96800b8cb4299b4852281ba4c0,
-    type: 3}
+  IncomeFxPrefab: {fileID: 5205163342400219264, guid: ca70db96800b8cb4299b4852281ba4c0, type: 3}
   InterstitialAdvDelay: 100
   DefaultGlovesColor: {r: 0.9063317, g: 0.25544992, b: 0.16286951, a: 1}
   GlovesColors:
@@ -65,13 +57,12 @@ MonoBehaviour:
   - {r: 0.7075472, g: 0.010012442, b: 0.062403914, a: 1}
   StatIncreaseLevelsByGloves: 2
   WinDelay: 2
-  SweatThreshold: 0.30000001192092896
+  SweatThreshold: 0.3
   StartPlaceMin: 10000
   StartPlaceMax: 15000
   ShiftPlaceMin: 20
   ShiftPlaceMax: 100
-  ScorePanelPrefab: {fileID: 3280751546198743037, guid: 372e5b91d9e8c334bae9f1f7c8bf60a2,
-    type: 3}
+  ScorePanelPrefab: {fileID: 3280751546198743037, guid: 372e5b91d9e8c334bae9f1f7c8bf60a2, type: 3}
   RandomNicknames:
   - Bambi
   - Diet Coke

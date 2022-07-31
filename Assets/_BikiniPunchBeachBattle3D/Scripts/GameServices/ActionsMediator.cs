@@ -46,7 +46,8 @@ namespace _BikiniPunchBeachBattle3D.GameServices
             _data.CurrentOpponentGO = Object.Instantiate(
                 _configs.PunchingBagPrefab,
                 _sceneRefs.OpponentAnchor.position,
-                _sceneRefs.OpponentAnchor.rotation);
+                _sceneRefs.OpponentAnchor.rotation,
+                _sceneRefs.OpponentAnchor);
 
             _data.SavableData.Opponent = new CharacterStats();
             _data.SavableData.Opponent.MaxHealth =
@@ -71,7 +72,8 @@ namespace _BikiniPunchBeachBattle3D.GameServices
             _data.CurrentOpponentGO = Object.Instantiate(
                 _configs.FighterOpponentPrefab,
                 _sceneRefs.OpponentAnchor.position,
-                _sceneRefs.OpponentAnchor.rotation);
+                _sceneRefs.OpponentAnchor.rotation,
+                _sceneRefs.OpponentAnchor);
 
             _data.SavableData.Opponent = new CharacterStats();
 
