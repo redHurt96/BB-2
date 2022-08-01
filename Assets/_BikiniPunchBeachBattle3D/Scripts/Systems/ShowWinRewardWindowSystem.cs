@@ -22,6 +22,8 @@ namespace _BikiniPunchBeachBattle3D.Systems
         {
             if (!_data.IsOpponentPunchingBag)
             {
+                _data.SavableData.OpponentSkinName = string.Empty;
+                
                 _windowsService.HideTopWindow();
                 _windowsService.Show<WinRewardWindow>();
             }

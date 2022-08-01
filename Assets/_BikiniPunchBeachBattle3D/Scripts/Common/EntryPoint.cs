@@ -26,6 +26,7 @@ namespace _BikiniPunchBeachBattle3D.Common
         protected override void RegisterSystems() =>
             _systems
                 .Add(new SaveLoadSystem())
+                .Add(new SaveAfterUpgradeSystem())
                 .Add(new InitHealth())
                 .Add(new InitStamina())
                 .Add(new IncreaseHealthByStrengthUpgrade())

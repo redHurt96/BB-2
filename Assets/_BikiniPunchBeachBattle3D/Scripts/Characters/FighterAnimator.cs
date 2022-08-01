@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using _BikiniPunchBeachBattle3D.GameServices;
 using RH.Utilities.ServiceLocator;
 using UnityEngine;
@@ -46,10 +47,23 @@ namespace _BikiniPunchBeachBattle3D.Characters
 
         private void LoadSkin()
         {
-            GameObject skin = _data.IsNextOpponentBoss 
-                ? _configs.BossSkin 
-                : _configs.OpponentSkins[Random.Range(0, _configs.OpponentSkins.Length)];
+            GameObject skin;
+            
+            if (!string.IsNullOrEmpty(_data.SavableData.OpponentSkinName))
+            {
+                skin = _data.SavableData.OpponentSkinName.Contains("boss") 
+                    ? _configs.BossSkin 
+                    : _configs.OpponentSkins.First(x => x.name == _data.SavableData.OpponentSkinName);
+            }
+            else
+            {
+                skin = _data.IsNextOpponentBoss
+                    ? _configs.BossSkin
+                    : _configs.OpponentSkins[Random.Range(0, _configs.OpponentSkins.Length)];
+            }
 
+            _data.SavableData.OpponentSkinName = skin.name;
+            
             Instantiate(skin, _gfxAnchor);
         }
     }

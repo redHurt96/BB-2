@@ -9,13 +9,11 @@ namespace _Game.Data
     {
         public string Key => "Save";
         
+        public string OpponentSkinName;
         public Color GlovesColor;
-
         public int OpponentLevel = 1;
         public int MoneyAmount;
-
         public CharacterStats Player = new CharacterStats();
-        
         [NonSerialized] public CharacterStats Opponent = new CharacterStats();
     }
 }
