@@ -16,7 +16,6 @@ namespace _BikiniPunchBeachBattle3D.Systems
         {
             if (type == StatType.Strength)
             {
-                _data.SavableData.Player.MaxHealth += _configs.HealthPerLevel;
                 _actions.ResetHealth();
                 
                 _events.HealthAmountChanged.Invoke(CharacterType.Player);

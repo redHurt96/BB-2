@@ -19,6 +19,7 @@ namespace _BikiniPunchBeachBattle3D.GameServices
         }
         public float RageValue { get; set; }
         public int LeaderboardPlace { get; set; }
+        public bool IsOpponentDefended { get; set; }
 
         private readonly ConfigsService _configs;
         private readonly EventsMediator _events;
@@ -70,7 +71,7 @@ namespace _BikiniPunchBeachBattle3D.GameServices
             GetStats(characterType).CurrentHealth;
 
         public int GetMaxHealth(CharacterType characterType) =>
-            GetStats(characterType).MaxHealth;
+            GetStatValue(StatType.Strength, characterType) * _configs.HealthPerStrength;
 
         public float GetStamina(CharacterType characterType) =>
             GetStats(characterType).CurrentStamina;

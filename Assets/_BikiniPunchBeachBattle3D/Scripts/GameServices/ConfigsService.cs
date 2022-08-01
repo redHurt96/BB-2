@@ -9,14 +9,14 @@ namespace _BikiniPunchBeachBattle3D.GameServices
     {
         public int StatsStartValue = 10;
         public int StatPerLevel = 2;
+        public int OpponentStartLevel = 5;
 
         [Space] 
         public int StartPrice = 100;
         public int PriceIncreasePerLevel = 50;
 
         [Space] 
-        public int PlayerHealth = 50;
-        public int HealthPerLevel = 10;
+        public int HealthPerStrength = 10;
         public int StaminaPerHit = 2;
         public float RestoreStaminaDelay;
         public float RestoreStaminaSpeed;

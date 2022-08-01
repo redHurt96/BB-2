@@ -50,10 +50,13 @@ namespace _BikiniPunchBeachBattle3D.GameServices
                 _sceneRefs.OpponentAnchor);
 
             _data.SavableData.Opponent = new CharacterStats();
-            _data.SavableData.Opponent.MaxHealth =
-                _data.GetStatValue(StatType.Strength, CharacterType.Player) * _configs.PunchingBagHitCount;
+            
+            foreach (StatData statData in _data.SavableData.Opponent.Stats)
+                statData.Level = (_data.SavableData.OpponentLevel + _configs.OpponentStartLevel) * 5;
             
             ResetHealth();
+            
+            _data.IsOpponentDefended = false;
         }
 
         public void GoToFight()
@@ -78,20 +81,18 @@ namespace _BikiniPunchBeachBattle3D.GameServices
             _data.SavableData.Opponent = new CharacterStats();
 
             foreach (StatData statData in _data.SavableData.Opponent.Stats)
-                statData.Level = _data.SavableData.OpponentLevel;
-
-            _data.SavableData.Opponent.MaxHealth =
-                _data.GetStatValue(StatType.Strength, CharacterType.Opponent)
-                * _configs.HealthPerLevel;
+                statData.Level = _data.SavableData.OpponentLevel + _configs.OpponentStartLevel - 1;
 
             ResetHealth();
             ResetStamina();
+
+            _data.IsOpponentDefended = false;
         }
 
         public void ResetHealth()
         {
-            _data.SavableData.Player.CurrentHealth = _data.SavableData.Player.MaxHealth;
-            _data.SavableData.Opponent.CurrentHealth = _data.SavableData.Opponent.MaxHealth;
+            _data.SavableData.Player.CurrentHealth = _data.GetMaxHealth(CharacterType.Player);
+            _data.SavableData.Opponent.CurrentHealth = _data.GetMaxHealth(CharacterType.Opponent);
             
             _events.HealthAmountChanged.Invoke(CharacterType.Player);
             _events.HealthAmountChanged.Invoke(CharacterType.Opponent);
@@ -122,6 +123,9 @@ namespace _BikiniPunchBeachBattle3D.GameServices
 
         public void HitOpponent()
         {
+            if (_data.IsOpponentDefended)
+                return;
+            
             _data.SavableData.Opponent.CurrentHealth =
                 Mathf.Max(_data.SavableData.Opponent.CurrentHealth - _data.GetStatValue(StatType.Strength, CharacterType.Player),
                     0);

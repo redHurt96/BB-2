@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StatsStartValue: 10
   StatPerLevel: 2
+  OpponentStartLevel: 5
   StartPrice: 100
   PriceIncreasePerLevel: 50
-  PlayerHealth: 50
-  HealthPerLevel: 5
+  HealthPerStrength: 10
   StaminaPerHit: 2
   RestoreStaminaDelay: 2
   RestoreStaminaSpeed: 5
@@ -37,8 +37,8 @@ MonoBehaviour:
   - {fileID: 987089744788299999, guid: cca32683453fd4b4c9d5d3d066df6b8c, type: 3}
   - {fileID: 2331982280544086362, guid: b6aad15d71e27ec43af45eb07e0fa51c, type: 3}
   BossSkin: {fileID: 1451115577101147535, guid: b35c17f33806f5a47bfee988549f35d0, type: 3}
-  AiPunchDelayMin: 1
-  AiPunchDelayMax: 2
+  AiPunchDelayMin: 1.3
+  AiPunchDelayMax: 2.5
   MoneyPerOpponent: 100
   StartMoneyForOpponent: 100
   PunchesToRage: 10

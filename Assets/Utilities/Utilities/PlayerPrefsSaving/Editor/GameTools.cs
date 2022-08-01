@@ -7,9 +7,12 @@ namespace RH.Utilities.Saving
 {
     public static class GameTools
     {
-        [MenuItem("🎮 Game/💾 Save/⚠ Clear saved data %#t")]
-        public static void ClearAll() => 
+        [MenuItem("🎮 Game/💾 Clear saved data %#t")]
+        public static void ClearAll()
+        {
+            Debug.Log($"Saved data was cleared");
             new SavableData().Clear();
+        }
 
         [MenuItem("🎮 Game/⚙ Select configs %#d")]
         public static void SelectSettings()

@@ -1,4 +1,5 @@
-﻿using _BikiniPunchBeachBattle3D.GameServices;
+﻿using System;
+using _BikiniPunchBeachBattle3D.GameServices;
 using RH.Utilities.ServiceLocator;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -30,6 +31,9 @@ namespace _BikiniPunchBeachBattle3D.Characters
             
             _animator = GetComponentInChildren<Animator>();
         }
+
+        private void Update() => 
+            _data.IsOpponentDefended = Time.time < _lastAttackTime + _delay;
 
         public void Punch()
         {

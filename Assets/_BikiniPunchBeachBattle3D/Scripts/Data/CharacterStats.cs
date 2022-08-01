@@ -8,7 +8,6 @@ namespace _Game.Data
     public class CharacterStats
     {
         public int CurrentHealth;
-        public int MaxHealth;
 
         public float CurrentStamina;
         
