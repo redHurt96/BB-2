@@ -1,4 +1,5 @@
-﻿using _BikiniPunchBeachBattle3D.GameServices;
+﻿using _Ads;
+using _BikiniPunchBeachBattle3D.GameServices;
 using RH.Utilities.ServiceLocator;
 using RH.Utilities.UI;
 
@@ -6,14 +7,14 @@ namespace _BikiniPunchBeachBattle3D.UI.Buttons
 {
     public class GetWinRewardX2Button : BaseActionButton
     {
-        private MaxAdsManager _ads;
+        private IAdsManager _ads;
         private Wallet _wallet;
         private DataService _data;
         private ActionsMediator _actions;
 
         protected override void PerformOnStart()
         {
-            _ads = Services.Get<MaxAdsManager>();    
+            _ads = Services.Get<IAdsManager>();    
             _wallet = Services.Get<Wallet>();
             _data = Services.Get<DataService>();
             _actions = Services.Get<ActionsMediator>();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using _Ads;
 using _BikiniPunchBeachBattle3D.GameServices;
 using _BikiniPunchBeachBattle3D.Scripts.Domain;
 using _BikiniPunchBeachBattle3D.UI.Windows.Components;
@@ -47,7 +48,7 @@ namespace _BikiniPunchBeachBattle3D.UI.Windows
             _buyButton.onClick.RemoveListener(Buy);
 
         private void Buy() =>
-            Services.Get<MaxAdsManager>().ShowRewardVideo("boss_fight_win", () =>
+            Services.Get<IAdsManager>().ShowRewardVideo("boss_fight_win", () =>
             {
                 _data.SetGlovesColor(_color);
                 _data.AddStats(_stats);

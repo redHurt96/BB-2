@@ -1,4 +1,8 @@
 ﻿using System.Collections;
+using _Ads;
+#if UNITY_ANDROID
+using Mamboo.Ads;
+#endif
 using RH.Utilities.Coroutines;
 using RH.Utilities.PseudoEcs;
 using RH.Utilities.ServiceLocator;
@@ -13,10 +17,10 @@ namespace _BikiniPunchBeachBattle3D.Systems
         
         private Coroutine _waitRoutine;
 
-        private MaxAdsManager _maxAdsManager;
+        private readonly IAdsManager _maxAdsManager;
         
         public InterstitialAdvSystem() => 
-            _maxAdsManager = Services.Get<MaxAdsManager>();
+            _maxAdsManager = Services.Get<IAdsManager>();
 
         public override void Init()
         {
