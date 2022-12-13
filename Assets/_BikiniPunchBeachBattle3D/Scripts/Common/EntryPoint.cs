@@ -22,10 +22,11 @@ namespace _BikiniPunchBeachBattle3D.Common
                 .RegisterSingle(new Wallet())
                 .RegisterSingle(new WindowsService())
                 .RegisterSingle(new ActionsMediator())
-                .RegisterSingle(GameObject.Find("MaxAdsManager").GetComponent<IAdsManager>());
+                .RegisterSingle<IAdsManager>(new YandexAdsManager());
 
         protected override void RegisterSystems() =>
             _systems
+                .Add(new InitializeBridgeSystem())
                 .Add(new SaveLoadSystem())
                 .Add(new SaveAfterUpgradeSystem())
                 .Add(new InitHealth())

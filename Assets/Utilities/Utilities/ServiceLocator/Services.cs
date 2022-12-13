@@ -17,7 +17,7 @@ namespace RH.Utilities.ServiceLocator
 
             return this;
         }
-
+        
         public static T Get<T>() where T : IService =>
             Instance.GetSingle<T>();
 
