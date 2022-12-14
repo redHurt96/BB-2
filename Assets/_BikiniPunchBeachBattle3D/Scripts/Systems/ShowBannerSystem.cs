@@ -8,7 +8,7 @@ namespace _BikiniPunchBeachBattle3D.Systems
     {
         public override void Init() =>
             Services
-                .Get<IAdsManager>()
+                .Get<IAdsService>()
                 .ShowBanner("Main scene");
 
         public override void Dispose() {}

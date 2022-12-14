@@ -48,7 +48,7 @@ namespace _BikiniPunchBeachBattle3D.UI.Windows
             _buyButton.onClick.RemoveListener(Buy);
 
         private void Buy() =>
-            Services.Get<IAdsManager>().ShowRewardVideo("boss_fight_win", () =>
+            Services.Get<IAdsService>().ShowRewardVideo("boss_fight_win", () =>
             {
                 _data.SetGlovesColor(_color);
                 _data.AddStats(_stats);

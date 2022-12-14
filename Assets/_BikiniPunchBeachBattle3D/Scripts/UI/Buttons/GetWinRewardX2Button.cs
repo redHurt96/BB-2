@@ -7,14 +7,14 @@ namespace _BikiniPunchBeachBattle3D.UI.Buttons
 {
     public class GetWinRewardX2Button : BaseActionButton
     {
-        private IAdsManager _ads;
+        private IAdsService _ads;
         private Wallet _wallet;
         private DataService _data;
         private ActionsMediator _actions;
 
         protected override void PerformOnStart()
         {
-            _ads = Services.Get<IAdsManager>();    
+            _ads = Services.Get<IAdsService>();    
             _wallet = Services.Get<Wallet>();
             _data = Services.Get<DataService>();
             _actions = Services.Get<ActionsMediator>();
